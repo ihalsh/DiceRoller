@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(reset_button).apply {
             setOnClickListener { reset() }
         }
-
     }
 
     private fun setRandomDiceImage() {
