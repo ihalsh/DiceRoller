@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setRandomDiceImage() {
 
-        fun getDrawableResource() = when ((1..6).random()) {
+        fun getRandomDrawableResource() = when ((1..6).random()) {
             1 -> dice_1
             2 -> dice_2
             3 -> dice_3
@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
             else -> dice_6
         }
 
-        diceImageViewOne.setImageResource(getDrawableResource())
-        diceImageViewTwo.setImageResource(getDrawableResource())
+        diceImageViewOne.setImageResource(getRandomDrawableResource())
+        diceImageViewTwo.setImageResource(getRandomDrawableResource())
     }
 
     private fun reset() {
